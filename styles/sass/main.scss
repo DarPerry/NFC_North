@@ -1,0 +1,55 @@
+$bears-navy: #0B162A;
+$bears-orange:#c83803;
+
+@font-face { font-family: Bayformance; src: url('fonts/Bayformance.otf'); } 
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    width: 450px;
+    height: 600px;
+    background-color: $bears-navy;
+    position: absolute;
+    margin: 40px;
+    border-radius: 10px;
+    background-image: url('../images/cross-bears.svg');
+    .team-logo{
+        width: 125px;
+        height: 125px;
+        background-color: $bears-navy;
+        position: absolute;
+        margin: 15px;
+        border-radius: 50%;
+        background-color: $bears-navy;
+        img{
+            margin: 12.5px auto;
+            height: 100px;
+            width: 100px;
+            display: block;
+        }
+    }
+    .player-image{
+        height: 100%;
+        width: 100%;
+    }
+    .player-name{
+        position: absolute;
+        bottom: 40px;
+        left: 0;
+        width: 100%;
+        font-size: 60px;
+        font-family: Bayformance;
+        color: #eeeeee;
+        background-color: $bears-navy;
+        text-align: center;
+        line-height: 100px;
+    }
+
+    #trubisky{
+        position: relative;
+        right: 20px;
+    }
+}
