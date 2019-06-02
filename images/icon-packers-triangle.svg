@@ -1,0 +1,7 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" 
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" height="22.5" width="22.5">
+    <line x1="11.25" y1="4.25" x2="11.25" y2="18.25" style="stroke:#FFB612;stroke-width:3.5" />
+    <line x1="4.25" y1="11.25" x2="18.25" y2="11.25" style="stroke:#FFB612;stroke-width:3.5" />
+</svg>

@@ -1,55 +1,134 @@
-$bears-navy: #0B162A;
-$bears-orange:#c83803;
+$bears-primary: #0b162a;
+$packers-primary: #203731;
+$vikings-primary: #4f2683;
+$lions-primary: #0076b6;
+$nfc-blue: #003b66;
 
-@font-face { font-family: Bayformance; src: url('fonts/Bayformance.otf'); } 
-
-*{
-    margin: 0;
-    padding: 0;
+@font-face {
+  font-family: Bayformance;
+  src: url("fonts/Bayformance.otf");
 }
 
-.container{
-    width: 450px;
-    height: 600px;
-    background-color: $bears-navy;
-    position: absolute;
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html{
+    background-image: url('../images/bkgnd-north.jpg');
+    background-attachment: fixed;
+}
+
+main {
+  margin: 0 auto;
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-color: #eeeeee;
+  font-family: Bayformance;
+  h1{
+      text-align: center;
+      width: 100%;
+      color: $nfc-blue;
+      font-size: 70px;
+     background-color: darken(#eeeeee, 10%);
+     padding: 10px 0;
+  }
+  .container {
+    display: inline-block;
+    width: 400px;
+    height: 550px;
+    position: relative;
     margin: 40px;
     border-radius: 10px;
-    background-image: url('../images/cross-bears.svg');
-    .team-logo{
-        width: 125px;
-        height: 125px;
-        background-color: $bears-navy;
-        position: absolute;
-        margin: 15px;
-        border-radius: 50%;
-        background-color: $bears-navy;
-        img{
-            margin: 12.5px auto;
-            height: 100px;
-            width: 100px;
-            display: block;
-        }
+    &:hover{
+        cursor: pointer;
     }
-    .player-image{
-        height: 100%;
-        width: 100%;
+    .team-logo {
+      width: 100px;
+      height: 100px;
+      position: absolute;
+      margin: 15px;
+      border-radius: 50%;
+      img {
+        margin: 12.5px auto;
+        height: 75px;
+        width: 75px;
+        display: block;
+      }
     }
-    .player-name{
-        position: absolute;
-        bottom: 40px;
-        left: 0;
-        width: 100%;
-        font-size: 60px;
-        font-family: Bayformance;
-        color: #eeeeee;
-        background-color: $bears-navy;
-        text-align: center;
-        line-height: 100px;
+    .player-name {
+      position: absolute;
+      top: 400px;
+      left: 0;
+      width: 100%;
+      font-size: 60px;
+      color: #eeeeee;
+      text-align: center;
+      line-height: 100px;
     }
 
-    #trubisky{
-        position: relative;
-        right: 20px;
+    #trubisky {
+      position: relative;
+      right: 20px;
     }
+  }
+
+  #bears {
+    background-color: $bears-primary;
+    background-image: url("../images/icon-bears-circle.svg");
+    .team-logo {
+      background-color: $bears-primary;
+    }
+    .player-name {
+      background-color: $bears-primary;
+    }
+  }
+
+  #packers {
+    background-color: $packers-primary;
+    background-size: 22.5px 22.5px;
+    background-image: url("../images/icon-packers-triangle.svg");
+    .team-logo {
+      background-color: $packers-primary;
+    }
+    .player-name {
+      background-color: $packers-primary;
+    }
+  }
+  #vikings {
+    background-color: $vikings-primary;
+    background-image: url("../images/icon-vikings-cross.svg");
+    .team-logo {
+      background-color: $vikings-primary;
+    }
+    .player-name {
+      background-color: $vikings-primary;
+    }
+  }
+  #lions {
+    background-color: $lions-primary;
+    background-image: url("../images/icon-lions-square.svg");
+    .team-logo {
+      background-color: $lions-primary;
+    }
+    .player-image {
+      position: relative;
+      left: 20px;
+    }
+    .player-name {
+      background-color: $lions-primary;
+    }
+  }
+
+  #nfc-logo-wrapper {
+    width: 100%;
+    img {
+        display: block;
+      margin: 0 auto;
+      width: 300px;
+      height: 300px;
+    }
+  }
 }
