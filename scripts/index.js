@@ -1,5 +1,6 @@
-$(function(){
-    $('.container').click(function(){
-        window.alert($(this).attr('id'));
+$(document).ready(function(){
+    $('.image-carousel').slick({
+        autoplay: true,
+        autoplaySpeed: 4000,
     });
-});
+  });

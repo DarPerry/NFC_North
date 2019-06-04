@@ -4,9 +4,9 @@
 <head>
     <title>NFC North</title>
     <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="lib/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="lib/slick/slick-theme.css" />
     <link href="styles/index.css" type="text/css" rel="stylesheet" />
-    <script src="scripts/index.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
 </head>
 
 <body>
@@ -17,8 +17,25 @@
             <div class='team-logo'>
                 <img src="images/logo-bears.png" alt="Bears Logo" />
             </div>
-            <img class="player-image" id='trubisky' src="images/player-trubisky.png" alt='Mitch Trubisky' />
-            <span class="player-name">Mitchell Trubisky</span>
+            <div class="image-carousel">
+                <div class="slide" style="width: 400px;">
+                    <img class="player-image" id='trubisky' src="images/player-trubisky.png" alt='Mitch Trubisky' />
+                    <span class="player-name">Mitchell Trubisky</span>
+                </div>
+                <div class="slide">
+                    <img class="player-image" id='mack' src="images/player-mack.png" alt='Khalil Mack' />
+                    <span class="player-name">Khalil Mack</span>
+                </div>
+                <div class="slide">
+                    <img class="player-image" id='hicks' src="images/player-hicks.png" alt='Akiem Hicks' />
+                    <span class="player-name">Akiem Hicks</span>
+                </div>
+                <!-- <div>
+                    <img class="player-image" id='jackson' src="images/player-jackson.png" alt='Eddie Jackson' />
+                    <span class="player-name">Eddie Jackson</span>
+                </div> -->
+            </div>
+
         </div>
 
         <div class="container" id="packers">
@@ -48,10 +65,13 @@
             <span class="player-name">Matthew Stafford</span>
         </div>
 
-        <h1>KING OF THE NORTH?</h1>
+        <h1>KING OF THE NORTH</h1>
+
+
     </main>
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
     <script src="scripts/index.js"></script>
-
+    <script type="text/javascript" src="lib/slick/slick.min.js"></script>
 </body>
+
 </html>
