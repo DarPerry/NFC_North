@@ -43,8 +43,8 @@ main .container {
   border-radius: 10px;
 }
 main .container .team-logo {
-  width: 100px;
-  height: 100px;
+  width: 75px;
+  height: 75px;
   position: absolute;
   margin: 15px;
   border-radius: 50%;
@@ -52,8 +52,8 @@ main .container .team-logo {
 }
 main .container .team-logo img {
   margin: 12.5px auto;
-  height: 75px;
-  width: 75px;
+  height: 50px;
+  width: 50px;
   display: block;
 }
 main .container .player-name {
@@ -65,8 +65,10 @@ main .container .player-name {
   line-height: 100px;
 }
 main .container .player-image {
+  margin-top: 25px;
+  width: 400px;
+  height: 400px;
   position: relative;
-  left: 20px;
 }
 main #bears {
   background-color: #0b162a;
@@ -78,16 +80,28 @@ main #bears .team-logo {
 main #bears .player-name {
   background-color: #0b162a;
 }
+main #bears .slick-prev:before {
+  color: #c83803;
+}
+main #bears .slick-next:before {
+  color: #c83803;
+}
 main #packers {
   background-color: #203731;
   background-size: 22.5px 22.5px;
-  background-image: url("../images/icon-packers-triangle.svg");
+  background-image: url("../images/icon-packers-plus.svg");
 }
 main #packers .team-logo {
   background-color: #203731;
 }
 main #packers .player-name {
   background-color: #203731;
+}
+main #packers .slick-prev:before {
+  color: #FFB612;
+}
+main #packers .slick-next:before {
+  color: #FFB612;
 }
 main #vikings {
   background-color: #4f2683;
@@ -99,6 +113,12 @@ main #vikings .team-logo {
 main #vikings .player-name {
   background-color: #4f2683;
 }
+main #vikings .slick-prev:before {
+  color: #FFC62F;
+}
+main #vikings .slick-next:before {
+  color: #FFC62F;
+}
 main #lions {
   background-color: #0076b6;
   background-image: url("../images/icon-lions-square.svg");
@@ -106,12 +126,14 @@ main #lions {
 main #lions .team-logo {
   background-color: #0076b6;
 }
-main #lions .player-image {
-  position: relative;
-  left: 20px;
-}
 main #lions .player-name {
   background-color: #0076b6;
+}
+main #lions .slick-prev:before {
+  color: #B0B7BC;
+}
+main #lions .slick-next:before {
+  color: #B0B7BC;
 }
 main #nfc-logo-wrapper {
   width: 100%;
@@ -121,14 +143,6 @@ main #nfc-logo-wrapper img {
   margin: 0 auto;
   width: 300px;
   height: 300px;
-}
-
-.slick-prev:before {
-  color: #c83803;
-}
-
-.slick-next:before {
-  color: #c83803;
 }
 
 /*# sourceMappingURL=index.css.map */

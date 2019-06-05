@@ -1,8 +1,11 @@
 $bears-primary: #0b162a;
 $bears-secondary: #c83803;
 $packers-primary: #203731;
+$packers-secondary:#FFB612;
 $vikings-primary: #4f2683;
+$vikings-secondary: #FFC62F;
 $lions-primary: #0076b6;
+$lions-secondary:#B0B7BC;
 $nfc-blue: #003b66;
 
 @font-face {
@@ -54,8 +57,8 @@ main {
 
 
     .team-logo {
-      width: 100px;
-      height: 100px;
+      width: 75px;
+      height: 75px;
       position: absolute;
       margin: 15px;
       border-radius: 50%;
@@ -63,8 +66,8 @@ main {
 
       img {
         margin: 12.5px auto;
-        height: 75px;
-        width: 75px;
+        height: 50px;
+        width: 50px;
         display: block;
       }
     }
@@ -81,9 +84,11 @@ main {
       line-height: 100px;
     }
 
-    .player-image{
+    .player-image {
+      margin-top: 25px;
+      width: 400px;
+      height: 400px;
       position: relative;
-      left: 20px;;
     }
   }
 
@@ -98,12 +103,20 @@ main {
     .player-name {
       background-color: $bears-primary;
     }
+
+    .slick-prev:before {
+      color: $bears-secondary;
+    }
+
+    .slick-next:before {
+      color: $bears-secondary;
+    }
   }
 
   #packers {
     background-color: $packers-primary;
     background-size: 22.5px 22.5px;
-    background-image: url("../images/icon-packers-triangle.svg");
+    background-image: url("../images/icon-packers-plus.svg");
 
     .team-logo {
       background-color: $packers-primary;
@@ -111,6 +124,14 @@ main {
 
     .player-name {
       background-color: $packers-primary;
+    }
+
+    .slick-prev:before {
+      color: $packers-secondary;
+    }
+
+    .slick-next:before {
+      color: $packers-secondary;
     }
   }
 
@@ -125,6 +146,14 @@ main {
     .player-name {
       background-color: $vikings-primary;
     }
+
+    .slick-prev:before {
+      color: $vikings-secondary;
+    }
+
+    .slick-next:before {
+      color: $vikings-secondary;
+    }
   }
 
   #lions {
@@ -135,13 +164,16 @@ main {
       background-color: $lions-primary;
     }
 
-    .player-image {
-      position: relative;
-      left: 20px;
-    }
-
     .player-name {
       background-color: $lions-primary;
+    }
+
+    .slick-prev:before {
+      color: $lions-secondary;
+    }
+
+    .slick-next:before {
+      color: $lions-secondary;
     }
   }
 
@@ -155,13 +187,4 @@ main {
       height: 300px;
     }
   }
-}
-
-//Slick Styles
-.slick-prev:before {
-  color: $bears-secondary;
-}
-
-.slick-next:before {
-  color: $bears-secondary;
 }
