@@ -18,6 +18,20 @@ $nfc-blue: #003b66;
   src: url("fonts/Nordic.ttf");
 }
 
+@mixin team-layout($primary, $secondary, $img-path) {
+  background-color: $primary;
+  background-image: url("../images/#{$img-path}");
+
+  .team-logo,
+  .player-name {
+    background-color: $primary;
+  }
+
+  .slick-prev:before,
+  .slick-next:before {
+    color: $secondary;
+  }
+}
 
 * {
   margin: 0;
@@ -104,65 +118,19 @@ main {
     }
   }
 
-//Refactor Below?
-
   #bears {
-    background-color: $bears-primary;
-    background-image: url("../images/icon-bears-circle.svg");
-
-    .team-logo,
-    .player-name {
-      background-color: $bears-primary;
-    }
-
-    .slick-prev:before,
-    .slick-next:before {
-      color: $bears-secondary;
-    }
+    @include team-layout($bears-primary, $bears-secondary, 'icon-bears-circle.svg');
   }
 
   #packers {
-    background-color: $packers-primary;
-    background-image: url("../images/icon-packers-plus.svg");
-
-    .team-logo,
-    .player-name {
-      background-color: $packers-primary;
-    }
-
-    .slick-prev:before,
-    .slick-next:before {
-      color: $packers-secondary;
-    }
+    @include team-layout($packers-primary, $packers-secondary, 'icon-packers-plus.svg');
   }
 
   #vikings {
-    background-color: $vikings-primary;
-    background-image: url("../images/icon-vikings-cross.svg");
-
-    .team-logo,
-    .player-name {
-      background-color: $vikings-primary;
-    }
-
-    .slick-prev:before,
-    .slick-next:before {
-      color: $vikings-secondary;
-    }
+    @include team-layout($vikings-primary, $vikings-secondary, 'icon-vikings-cross.svg');
   }
 
   #lions {
-    background-color: $lions-primary;
-    background-image: url("../images/icon-lions-square.svg");
-
-    .team-logo,
-    .player-name {
-      background-color: $lions-primary;
-    }
-
-    .slick-prev:before,
-    .slick-next:before {
-      color: $lions-secondary;
-    }
+    @include team-layout($lions-primary, $lions-secondary, 'icon-lions-square.svg');
   }
 }
