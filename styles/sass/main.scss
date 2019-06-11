@@ -18,6 +18,7 @@ $nfc-blue: #003b66;
   src: url("fonts/Nordic.ttf");
 }
 
+
 * {
   margin: 0;
   padding: 0;
@@ -55,7 +56,6 @@ main {
     margin: 40px;
     border-radius: 10px;
 
-
     .team-logo {
       width: 75px;
       height: 75px;
@@ -72,10 +72,11 @@ main {
       }
     }
 
+    .slide {
+      width: 400px;
+    }
+
     .player-name {
-      // position: absolute;
-      // top: 400px;
-      // left: 0;
       display: block;
       width: 400px;
       font-size: 60px;
@@ -92,22 +93,29 @@ main {
     }
   }
 
+  #nfc-logo-wrapper {
+    width: 100%;
+
+    img {
+      display: block;
+      margin: 0 auto;
+      width: 300px;
+      height: 300px;
+    }
+  }
+
+//Refactor Below?
+
   #bears {
     background-color: $bears-primary;
     background-image: url("../images/icon-bears-circle.svg");
 
-    .team-logo {
-      background-color: $bears-primary;
-    }
-
+    .team-logo,
     .player-name {
       background-color: $bears-primary;
     }
 
-    .slick-prev:before {
-      color: $bears-secondary;
-    }
-
+    .slick-prev:before,
     .slick-next:before {
       color: $bears-secondary;
     }
@@ -115,21 +123,14 @@ main {
 
   #packers {
     background-color: $packers-primary;
-    background-size: 22.5px 22.5px;
     background-image: url("../images/icon-packers-plus.svg");
 
-    .team-logo {
-      background-color: $packers-primary;
-    }
-
+    .team-logo,
     .player-name {
       background-color: $packers-primary;
     }
 
-    .slick-prev:before {
-      color: $packers-secondary;
-    }
-
+    .slick-prev:before,
     .slick-next:before {
       color: $packers-secondary;
     }
@@ -139,18 +140,12 @@ main {
     background-color: $vikings-primary;
     background-image: url("../images/icon-vikings-cross.svg");
 
-    .team-logo {
-      background-color: $vikings-primary;
-    }
-
+    .team-logo,
     .player-name {
       background-color: $vikings-primary;
     }
 
-    .slick-prev:before {
-      color: $vikings-secondary;
-    }
-
+    .slick-prev:before,
     .slick-next:before {
       color: $vikings-secondary;
     }
@@ -160,31 +155,14 @@ main {
     background-color: $lions-primary;
     background-image: url("../images/icon-lions-square.svg");
 
-    .team-logo {
-      background-color: $lions-primary;
-    }
-
+    .team-logo,
     .player-name {
       background-color: $lions-primary;
     }
 
-    .slick-prev:before {
-      color: $lions-secondary;
-    }
-
+    .slick-prev:before,
     .slick-next:before {
       color: $lions-secondary;
-    }
-  }
-
-  #nfc-logo-wrapper {
-    width: 100%;
-
-    img {
-      display: block;
-      margin: 0 auto;
-      width: 300px;
-      height: 300px;
     }
   }
 }

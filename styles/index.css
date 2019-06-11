@@ -14,8 +14,6 @@
 html {
   background-image: url("../images/bkgnd-north.jpg");
   background-attachment: fixed;
-  background-size: cover;
-  background-repeat: no-repeat;
 }
 
 main {
@@ -58,6 +56,9 @@ main .container .team-logo img {
   width: 50px;
   display: block;
 }
+main .container .slide {
+  width: 400px;
+}
 main .container .player-name {
   display: block;
   width: 400px;
@@ -72,71 +73,6 @@ main .container .player-image {
   height: 400px;
   position: relative;
 }
-main #bears {
-  background-color: #0b162a;
-  background-image: url("../images/icon-bears-circle.svg");
-}
-main #bears .team-logo {
-  background-color: #0b162a;
-}
-main #bears .player-name {
-  background-color: #0b162a;
-}
-main #bears .slick-prev:before {
-  color: #c83803;
-}
-main #bears .slick-next:before {
-  color: #c83803;
-}
-main #packers {
-  background-color: #203731;
-  background-size: 22.5px 22.5px;
-  background-image: url("../images/icon-packers-plus.svg");
-}
-main #packers .team-logo {
-  background-color: #203731;
-}
-main #packers .player-name {
-  background-color: #203731;
-}
-main #packers .slick-prev:before {
-  color: #FFB612;
-}
-main #packers .slick-next:before {
-  color: #FFB612;
-}
-main #vikings {
-  background-color: #4f2683;
-  background-image: url("../images/icon-vikings-cross.svg");
-}
-main #vikings .team-logo {
-  background-color: #4f2683;
-}
-main #vikings .player-name {
-  background-color: #4f2683;
-}
-main #vikings .slick-prev:before {
-  color: #FFC62F;
-}
-main #vikings .slick-next:before {
-  color: #FFC62F;
-}
-main #lions {
-  background-color: #0076b6;
-  background-image: url("../images/icon-lions-square.svg");
-}
-main #lions .team-logo {
-  background-color: #0076b6;
-}
-main #lions .player-name {
-  background-color: #0076b6;
-}
-main #lions .slick-prev:before {
-  color: #B0B7BC;
-}
-main #lions .slick-next:before {
-  color: #B0B7BC;
-}
 main #nfc-logo-wrapper {
   width: 100%;
 }
@@ -145,6 +81,54 @@ main #nfc-logo-wrapper img {
   margin: 0 auto;
   width: 300px;
   height: 300px;
+}
+main #bears {
+  background-color: #0b162a;
+  background-image: url("../images/icon-bears-circle.svg");
+}
+main #bears .team-logo,
+main #bears .player-name {
+  background-color: #0b162a;
+}
+main #bears .slick-prev:before,
+main #bears .slick-next:before {
+  color: #c83803;
+}
+main #packers {
+  background-color: #203731;
+  background-image: url("../images/icon-packers-plus.svg");
+}
+main #packers .team-logo,
+main #packers .player-name {
+  background-color: #203731;
+}
+main #packers .slick-prev:before,
+main #packers .slick-next:before {
+  color: #FFB612;
+}
+main #vikings {
+  background-color: #4f2683;
+  background-image: url("../images/icon-vikings-cross.svg");
+}
+main #vikings .team-logo,
+main #vikings .player-name {
+  background-color: #4f2683;
+}
+main #vikings .slick-prev:before,
+main #vikings .slick-next:before {
+  color: #FFC62F;
+}
+main #lions {
+  background-color: #0076b6;
+  background-image: url("../images/icon-lions-square.svg");
+}
+main #lions .team-logo,
+main #lions .player-name {
+  background-color: #0076b6;
+}
+main #lions .slick-prev:before,
+main #lions .slick-next:before {
+  color: #B0B7BC;
 }
 
 /*# sourceMappingURL=index.css.map */
